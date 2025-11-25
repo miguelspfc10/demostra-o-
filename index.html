@@ -1,135 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Buzz - Veio para Voar</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-
-    body {
-      background: #09090f;
-      color: white;
-      overflow-x: hidden;
-    }
-
-    header {
-      width: 100%;
-      padding: 20px;
-      background: rgba(0,0,0,0.5);
-      position: fixed;
-      top: 0;
-      left: 0;
-      backdrop-filter: blur(10px);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 10;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #4cd4ff;
-    }
-
-    .hero {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-      text-shadow: 0 0 10px black;
-    }
-
-    .hero h1 {
-      font-size: 4rem;
-      animation: glow 3s infinite;
-    }
-
-    @keyframes glow {
-      0%, 100% { text-shadow: 0 0 10px #4cd4ff; }
-      50% { text-shadow: 0 0 25px #4cd4ff; }
-    }
-
-    section {
-      padding: 90px 40px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      padding: 25px;
-      border-radius: 20px;
-      margin: 20px 0;
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(76,212,255,0.3);
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: rgba(0,0,0,0.4);
-      margin-top: 30px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h2>Game Buzz</h2>
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
-
-<div class="hero" id="inicio">
-  <h1>Bem-vindo ao Game Buzz</h1>
-  <h2 style="margin-top:10px;">Venha conhecer nossa trajetória</h2>
-</div>
-
 <section id="sobre">
   <h2>Sobre o Negócio</h2>
   <div class="card">
-    <p>Game Buzz nasce com o objetivo de oferecer eletrônicos pensados para criatividade e desempenho. Inspirados em marcas de referência como mancer, entregamos design industrial, usabilidade e suporte técnico.</p>
+    <p>
+      A Game Buzz inicia sua jornada como uma fornecedora especializada no transporte e distribuição de eletrônicos e equipamentos tecnológicos. 
+      Nosso foco é garantir que cada produto chegue ao cliente com segurança, agilidade e total cuidado — sempre prezando pela integridade e qualidade.
+    </p>
+    <br>
+    <p>
+      Trabalhamos com parceiros confiáveis e logística inteligente para atender lojas, criadores de conteúdo, gamers e empresas que dependem de equipamentos de alto desempenho.
+    </p>
+    <br>
+    <p>
+      Nossa visão é clara: em um futuro próximo, evoluir de distribuidora para fabricante, desenvolvendo nossa própria linha de produtos tecnológicos, unindo inovação, estética moderna e performance avançada.
+    </p>
   </div>
 </section>
-
-<section id="servicos">
-  <h2>Serviços</h2>
-  <div class="card"><strong>⚔️ Design tecnológico:</strong> Otimos acabamentos, linhas limpas e materiais duráveis.</div>
-  <div class="card"><strong>🛡️ Performance:</strong> Componentes escolhidos para proporcionar experiência fluida em jogos e produção.</div>
-  <div class="card"><strong>🎯 Suporte:</strong> Garantia, assistência técnica e atualizações contínuas.</div>
-</section>
-
-<section id="contato">
-  <h2>Contato</h2>
-  <div class="card">
-    <p>Email: gamebuzzofc@gmail.com</p>
-    <p>Instagram: @gamebuzz</p>
-  </div>
-</section>
-
-<footer>
-  <p>© Game Buzz — Todos os direitos reservados</p>
-</footer>
-
-</body>
-</html>
