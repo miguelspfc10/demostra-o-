@@ -11,6 +11,7 @@
       background: #09090f;
       color: white;
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -62,6 +63,8 @@
 
     section {
       padding: 90px 40px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .card {
@@ -86,6 +89,32 @@
       margin-top: 30px;
       border-top: 1px solid rgba(255,255,255,0.1);
     }
+
+    /* Nova identidade visual para Serviços e Diferencial */
+    .card[style] {
+      border-left: 4px solid #4cd4ff !important;
+      padding-left: 20px !important;
+    }
+
+    /* Logo fixa no canto inferior direito */
+    .logo-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 90px;
+      opacity: 0.9;
+      z-index: 9999;
+      transition: 0.2s ease;
+      border-radius: 12px;
+      background: rgba(0,0,0,0.3);
+      padding: 5px;
+    }
+
+    .logo-fixed:hover {
+      opacity: 1;
+      transform: scale(1.06);
+      box-shadow: 0 0 15px rgba(76, 212, 255, 0.7);
+    }
   </style>
 </head>
 <body>
@@ -93,19 +122,17 @@
 <header>
   <h2>Game Buzz</h2>
   <nav>
-  <a href="#inicio">Início</a>
-  <a href="#sobre">Sobre</a>
-  <a href="#servicos">Serviços</a>
-  <a href="#visao-futura">Visão Futura</a>
-  <a href="#por-que-escolher">Diferencial</a>
-  <a href="#contato">Contato</a>
-</nav>
-
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#visao-futura">Visão Futura</a>
+    <a href="#por-que-escolher">Diferencial</a>
+    <a href="#contato">Contato</a>
+  </nav>
 </header>
 
 <div class="hero" id="inicio">
-  <h1>Bem-vindo 
-    Game Buzz</h1>
+  <h1>Bem-vindo ao Game Buzz</h1>
   <h2 style="margin-top:10px;">Venha conhecer nossa trajetória</h2>
 </div>
 
@@ -164,7 +191,7 @@
 
 </section>
 
-  <section id="visao-futura">
+<section id="visao-futura">
   <h2>Visão Futura</h2>
   <div class="card">
     <p>
@@ -181,7 +208,7 @@
   </div>
 </section>
 
-  <section id="por-que-escolher">
+<section id="por-que-escolher">
   <h2>Por que escolher a Game Buzz?</h2>
 
   <div class="card" style="border-left: 4px solid #4cd4ff;">
@@ -214,7 +241,6 @@
 
 </section>
 
-
 <section id="contato">
   <h2>Contato</h2>
   <div class="card">
@@ -223,9 +249,12 @@
   </div>
 </section>
 
-<footer>  <p>© Game Buzz — Todos os direitos reservados</p>
+<footer>
+  <p>© Game Buzz — Todos os direitos reservados</p>
 </footer>
-<img src="img/SUA_LOGO_AQUI.png.webp" alt="Logo Game Buzz" class="logo-fixed">
+
+<!-- Logo fixa no canto inferior direito -->
+<img src="/mnt/data/SUA_LOGO_AQUI.png.webp" alt="Logo Game Buzz" class="logo-fixed">
 
 </body>
 </html>
